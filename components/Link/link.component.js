@@ -33,22 +33,20 @@ export const LinkComponent = ({
     );
   }
   return (
-    <Link href={href}>
-      <a
-        target={target}
-        rel={rel}
-        className={`
-          ${styles.root}
-          ${isButton ? styles.isButton : ''}
-          ${secondary ? styles.secondary : ''}
-          ${grey ? styles.grey : ''}
-          ${inverted ? styles.inverted : ''}
-          ${className}
-        `}
-      >
+    <Link href={href}
+    target={target}
+    rel={rel}
+    className={`
+      ${styles.root}
+      ${isButton ? styles.isButton : ''}
+      ${secondary ? styles.secondary : ''}
+      ${grey ? styles.grey : ''}
+      ${inverted ? styles.inverted : ''}
+      ${className}
+    `}
+    >
         <Chevron />
         {linkText}
-      </a>
     </Link>
   );
 };

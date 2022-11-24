@@ -1,15 +1,9 @@
-const withReactSvg = require('next-react-svg');
-const path = require('path');
-
-module.exports = withReactSvg({
-  include: path.resolve(__dirname, 'public/images'),
-  webpack(config, options) {
-    return config;
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
   experimental: {
     runtime: 'experimental-edge',
-  },
-  env: {
-    GITHUB_API_ACTIVE: process.env.GITHUB_API_ACTIVE ? process.env.GITHUB_API_ACTIVE : false,
-  }
-});
+    },
+}
+
+module.exports = nextConfig

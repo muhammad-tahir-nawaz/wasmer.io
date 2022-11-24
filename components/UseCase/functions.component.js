@@ -15,7 +15,7 @@ export const FunctionsComponent = () => {
                         <img alt="Confio" src="/images/case-studies/fluence-labs-logo.svg" width="200px"></img>
                     </div>
                     <div className={`${styles.itemRight}`}>
-                        <Link href="/case-studies/fluence"><a className={`${styles.action}`}>Read the Case Study</a></Link>
+                        <Link href="/case-studies/fluence" className={`${styles.action}`}>Read the Case Study</Link>
                     </div>
                 </div>
 

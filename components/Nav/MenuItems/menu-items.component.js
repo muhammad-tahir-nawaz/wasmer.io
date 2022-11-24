@@ -12,17 +12,17 @@ export const MenuItemsComponent = ({ links, mobile, onClick }) => {
             hover:opacity-75 transition transition-opacity duration-200
           `}
         >
-          <Link href={href}>
-            <a
-              className={`${
-                mobile ? 'py-4 w-full block text-white text-base' : ''
-              } no-underline`}
-              target={external ? '_blank' : ''}
-              onClick={onClick}
-              rel={external ? 'noopener noreferrer' : ''}
-            >
+          <Link href={href}
+                      className={`${
+                        mobile ? 'py-4 w-full block text-white text-base' : ''
+                      } no-underline`}
+                      target={external ? '_blank' : ''}
+                      onClick={onClick}
+                      rel={external ? 'noopener noreferrer' : ''}
+          >
+
               {label}
-            </a>
+
           </Link>
         </li>
       ))}

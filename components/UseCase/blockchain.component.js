@@ -15,7 +15,7 @@ export const BlockchainComponent = () => {
                         <img alt="Confio" src="/images/case-studies/confio-logo.svg" width="200px"></img>
                     </div>
                     <div className={`${styles.itemRight}`}>
-                    <Link href="/case-studies/confio"><a className={`${styles.action}`}>Read the Case Study</a></Link>
+                    <Link href="/case-studies/confio" className={`${styles.action}`}>Read the Case Study</Link>
                     </div>
                 </div>
 

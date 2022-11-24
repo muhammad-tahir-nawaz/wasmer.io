@@ -134,3 +134,7 @@ export default function WasmerLucetPage() {
     </>
   );
 }
+
+export async function getServerSideProps() {
+  return { props: { content: "" } };
+}
