@@ -7,6 +7,8 @@ import markdownToHtml from '../lib/markdownToHtml';
 
 import { PostComponent } from '../components/Post';
 
+import Script from 'next/script';
+
 export default function CaseStudyPage({ caseStudy }) {
     const router = useRouter();
     if (!router.isFallback && !caseStudy?.slug) {
@@ -28,7 +30,7 @@ export default function CaseStudyPage({ caseStudy }) {
                     rel="stylesheet"
                     href="https://jmblog.github.io/color-themes-for-highlightjs/css/themes/tomorrow-night-blue.css"
                 />
-                <script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+                <Script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></Script>
             </Head>
             <PostComponent title={caseStudy.title} author={caseStudy.author} date={caseStudy.date}>
                 <div dangerouslySetInnerHTML={{ __html: caseStudy.content }} />

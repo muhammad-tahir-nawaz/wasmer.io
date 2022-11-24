@@ -1,4 +1,5 @@
 import React from 'react';
+import { urlFor } from '../../utils/sanity.util';
 import styles from './post.module.css';
 
 export const AvatarComponent = ({ author }) => {
@@ -6,7 +7,7 @@ export const AvatarComponent = ({ author }) => {
   return (
     <img
       className="w-12 h-12 rounded-full bg-lightgrey"
-      src={author.image}
+      src={urlFor(author.image)}
       alt={author.name}
     />
   );

@@ -129,3 +129,7 @@ export default function WasmerWasmtimePage() {
     </>
   );
 }
+
+export async function getServerSideProps() {
+  return { props: { content: "" } };
+}

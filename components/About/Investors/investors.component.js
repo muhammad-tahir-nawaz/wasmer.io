@@ -11,18 +11,16 @@ export const InvestorsComponent = () => {
         </h1>
         <div className="flex flex-row justify-around items-center">
           {investors.map(({ name, href, image }, index) => (
-            <Link href={href} key={index}>
-              <a
-                className="no-underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <Link href={href} key={index}
+            className="no-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
                 <img
                   className="w-4/5 md:w-full"
                   src={`images/investors/${image}`}
                   alt={name}
                 />
-              </a>
             </Link>
           ))}
         </div>

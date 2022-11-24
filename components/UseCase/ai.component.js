@@ -15,7 +15,9 @@ export const AiComponent = () => {
                         <img alt="Confio" src="/images/case-studies/hotg-logo.png" width="200px"></img>
                     </div>
                     <div className={`${styles.itemRight}`}>
-                    <Link href="/case-studies/hotg"><a className={`${styles.action}`}>Read the Case Study</a></Link>
+                    <Link href="/case-studies/hotg"
+                    className={`${styles.action}`}
+                    >Read the Case Study</Link>
                     </div>
                 </div>
 

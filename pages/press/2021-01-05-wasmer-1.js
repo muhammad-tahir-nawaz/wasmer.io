@@ -126,3 +126,7 @@ export default function AboutPage() {
     </>
   );
 }
+
+export async function getServerSideProps() {
+  return { props: { content: "" } };
+}

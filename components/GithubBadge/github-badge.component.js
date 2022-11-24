@@ -13,11 +13,11 @@ export const GithubBadge = ({ colored }) => {
         rel="noopener noreferrer"
       >
         <span className={styles.githubAction}>
-          {colored ? (
+          {/* {colored ? (
             <GithubLogoWhite width="20px" height="20px" />
           ) : (
             <GithubLogo width="20px" height="20px" />
-          )}
+          )} */}
           Star
         </span>
         <span className={styles.githubStars}>

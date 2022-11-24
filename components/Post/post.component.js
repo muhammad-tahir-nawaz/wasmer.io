@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './post.module.css';
+import { urlFor } from '../../utils/sanity.util';
 import { DateFormatter } from '../Date';
 
 export const PostComponent = ({ title, children, author, date }) => {
@@ -12,7 +13,7 @@ export const PostComponent = ({ title, children, author, date }) => {
             <div className="flex items-center">
               <img
                 className="w-12 h-12 rounded-full bg-lightgrey"
-                src={author.image}
+                src={urlFor(author.image)}
                 alt={author.name}
               />
               <div className="ml-4">
@@ -22,7 +23,7 @@ export const PostComponent = ({ title, children, author, date }) => {
                 </div>
               </div>
             </div>
-            <div class="prose mt-4">{children}</div>
+            <div className="prose mt-4">{children}</div>
           </article>
         </div>
       </div>
