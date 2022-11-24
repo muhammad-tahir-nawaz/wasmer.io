@@ -6,6 +6,8 @@ import { PostComponent } from '../../components/Post';
 import client from '../../client';
 import PortableTextComponent from '../../components/PortableTextComponent';
 
+import Script from 'next/script';
+
 export default function PostPage({ post }) {
   const router = useRouter();
   if (!router.isFallback && !post?.slug) {
@@ -28,7 +30,7 @@ export default function PostPage({ post }) {
           rel="stylesheet"
           href="https://jmblog.github.io/color-themes-for-highlightjs/css/themes/tomorrow-night-blue.css"
         />
-        <script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+        <Script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></Script>
       </Head>
       <PostComponent title={post.title} author={post.author} date={post.publishedAt}>
         <PortableText
