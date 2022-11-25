@@ -51,7 +51,3 @@ export default function CommunityPage() {
     </>
   );
 }
-
-export async function getServerSideProps() {
-  return { props: { content: "" } };
-}
