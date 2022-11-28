@@ -9,17 +9,6 @@ module.exports = withReactSvg({
   experimental: {
     runtime: 'experimental-edge',
   },
-  headers: () => [
-    {
-      source: '/',
-      headers: [
-        {
-          key: 'Cache-Control',
-          value: 'no-cache',
-        },
-      ],
-    },
-  ],
   env: {
     GITHUB_API_ACTIVE: process.env.GITHUB_API_ACTIVE ? process.env.GITHUB_API_ACTIVE : false,
   }
