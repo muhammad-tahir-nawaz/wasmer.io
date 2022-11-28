@@ -7,7 +7,7 @@ module.exports = withReactSvg({
     return config;
   },
   experimental: {
-    runtime: 'node',
+    runtime: 'experimental-edge',
   },
   headers: () => [
     {
