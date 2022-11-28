@@ -7,7 +7,7 @@ module.exports = withReactSvg({
     return config;
   },
   experimental: {
-    runtime: 'experimental-edge',
+    runtime: 'node',
   },
   headers: () => [
     {
@@ -15,7 +15,7 @@ module.exports = withReactSvg({
       headers: [
         {
           key: 'Cache-Control',
-          value: 'no-store',
+          value: 'no-cache',
         },
       ],
     },
