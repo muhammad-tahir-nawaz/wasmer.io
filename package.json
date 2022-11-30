@@ -4,7 +4,7 @@
   "scripts": {
     "delete": "del-cli --force ./.next/cache",
     "dev": "next",
-    "build": "next build && del-cli --force ./.next/cache",
+    "build": "next build",
     "start": "next start",
     "linter": "eslint '{components,pages}/**/*.js' --max-warnings=0",
     "fixer": "eslint --fix {components,pages}/**/*.js",
