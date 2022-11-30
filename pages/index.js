@@ -7,7 +7,7 @@ import {
   LinkComponent,
 } from '../components';
 import {
-  ExplainerComponent,
+  // ExplainerComponent,
   HeroComponent,
   InstallComponent,
   TestimonialsComponent,
@@ -18,7 +18,7 @@ export default function IndexPage() {
   return (
     <>
       <HeroComponent />
-      <ExplainerComponent />
+      {/* <ExplainerComponent /> */}
       <UseCaseComponent />
       <InstallComponent />
       <PackagesComponent />
